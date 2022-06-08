@@ -10,8 +10,7 @@ app.use(express.json())
 
 /** Get transactions */
 app.get('/transaction', async (_, res) => {
-  const transaction = await prisma.transactions.findMany()
-  return res.json(transaction)
+  res.json('hello there')
 })
 
 /** Post transactions */
