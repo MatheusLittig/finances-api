@@ -1,5 +1,5 @@
-import express from 'express'
-import { PrismaClient } from '@prisma/client'
+const express = require('express')
+const { PrismaClient } = require('@prisma/client')
 
 const app = express()
 const prisma = new PrismaClient()
@@ -10,7 +10,8 @@ app.use(express.json())
 
 /** Get transactions */
 app.get('/transaction', async (_, res) => {
-  res.json('hello there')
+  const transactions = await prisma.transactions.findMany()
+  res.json(transactions)
 })
 
 /** Post transactions */
