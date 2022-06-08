@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/index.js",
     "build": "tsc",
-    "postinstall": "npm run build && prisma generate"
+    "postinstall": "prisma generate"
   },
   "devDependencies": {
     "@prisma/client": "^3.14.0",
