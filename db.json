@@ -1,0 +1,11 @@
+{
+  "transactions": [
+    {
+      "amount": 20,
+      "description": "Teste transaction number 2",
+      "type": 2,
+      "category": 3,
+      "id": "EUYdueD"
+    }
+  ]
+}
