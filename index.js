@@ -1,24 +1,16 @@
-// const express = require('express')
-// const { PrismaClient } = require('@prisma/client')
-
-// const server = express()
-// const prisma = new PrismaClient()
-
-// const port = process.env.PORT || 3000
-
-// server.use(express.json())
-
+const axios = require('axios');
+const { v4 } = require('uuid')
 
 const jsonServer = require('json-server')
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
-const port = process.env.PORT || 3000;
-const axios = require('axios');
-const { v4 } = require('uuid')
 
 server.use(middlewares)
 server.use(router)
+
+const port = process.env.PORT || 3000;
+
 
 /** Get transactions */
 server.get('/transactions', async (_, res) => {
@@ -74,6 +66,6 @@ server.put('/transactions/:id', async (req, res) => {
   return res.json(transaction)
 })
 
-server.listen(3000, () => {
+server.listen(port, () => {
   console.log('JSON Server is running')
 })
