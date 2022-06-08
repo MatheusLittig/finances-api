@@ -4,6 +4,8 @@ import { PrismaClient } from '@prisma/client'
 const app = express()
 const prisma = new PrismaClient()
 
+const port = process.env.PORT || 3000
+
 app.use(express.json())
 
 /** Get transactions */
@@ -61,6 +63,6 @@ app.put('/transaction/:id', async (req, res) => {
   return res.json(transaction)
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log('Server is running on port 3000')
 })
