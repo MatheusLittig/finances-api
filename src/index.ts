@@ -18,10 +18,10 @@ app.post('/transaction', async (req, res) => {
 
   const transaction = await prisma.transactions.create({
     data: {
-      amount,
+      amount: Number(amount),
       description,
-      type,
-      category,
+      type: Number(type),
+      category: Number(category),
     },
   })
 
@@ -34,7 +34,7 @@ app.delete('/transaction/:id', async (req, res) => {
 
   const transaction = await prisma.transactions.delete({
     where: {
-      id,
+      id: Number(id),
     },
   })
 
@@ -48,7 +48,7 @@ app.put('/transaction/:id', async (req, res) => {
 
   const transaction = await prisma.transactions.update({
     where: {
-      id,
+      id: Number(id),
     },
     data: {
       amount,

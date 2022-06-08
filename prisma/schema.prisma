@@ -14,7 +14,7 @@ datasource db {
 }
 
 model transactions {
-  id          Int      @id @unique @default(autoincrement())
+  id          Int      @id @default(autoincrement())
   amount      Int
   description String   @db.VarChar(255)
   createdAt   DateTime @default(now())

@@ -39,6 +39,11 @@
   resolved "https://registry.yarnpkg.com/@prisma/engines-version/-/engines-version-3.14.0-36.2b0c12756921c891fec4f68d9444e18c7d5d4a6a.tgz#4edae57cf6527f35e22cebe75e49214fc0e99ac9"
   integrity sha512-D+yHzq4a2r2Rrd0ZOW/mTZbgDIkUkD8ofKgusEI1xPiZz60Daks+UM7Me2ty5FzH3p/TgyhBpRrfIHx+ha20RQ==
 
+"@prisma/engines@3.15.0-29.b9297dc3a59307060c1c39d7e4f5765066f38372":
+  version "3.15.0-29.b9297dc3a59307060c1c39d7e4f5765066f38372"
+  resolved "https://registry.yarnpkg.com/@prisma/engines/-/engines-3.15.0-29.b9297dc3a59307060c1c39d7e4f5765066f38372.tgz#c3dda39b42e9f62f910675818e4d813a16a3a76d"
+  integrity sha512-S5T0NuVF2+NoKoxY5bN6O/7avv4ifcjqqk5+JFZ6C4g+P7JMM3nY0wGBPI+46A8yGIDsyyFmvFTYiIDsEUwUeQ==
+
 "@tsconfig/node10@^1.0.7":
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/@tsconfig/node10/-/node10-1.0.8.tgz#c1e4e80d6f964fbecb3359c43bd48b40f7cadad9"
@@ -436,6 +441,13 @@ path-to-regexp@0.1.7:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
+
+prisma@^3.15.0:
+  version "3.15.0"
+  resolved "https://registry.yarnpkg.com/prisma/-/prisma-3.15.0.tgz#3c80e8ca0814f1e90668b883ceb0c9ce3f8c5538"
+  integrity sha512-HL1kGDuFi9PdhbVLYsQO9vAH9uRFAHk7ifUOQxSrzUDs7R4VfLtg45VvXz8VHwcgLY5h0OrDVe1TdEX7a4o9tg==
+  dependencies:
+    "@prisma/engines" "3.15.0-29.b9297dc3a59307060c1c39d7e4f5765066f38372"
 
 proxy-addr@~2.0.7:
   version "2.0.7"
